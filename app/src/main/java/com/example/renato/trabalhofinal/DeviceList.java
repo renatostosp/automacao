@@ -35,7 +35,8 @@ public class DeviceList extends AppCompatActivity {
 
         //if the device has bluetooth
         myBluetooth = BluetoothAdapter.getDefaultAdapter();
-
+        btnPaired = (Button) findViewById(R.id.button);
+        devicelist =  (ListView)findViewById(listView);
         if(myBluetooth == null)
         {
             //Show a mensag. that the device has no bluetooth adapter
